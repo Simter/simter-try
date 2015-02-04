@@ -1,0 +1,47 @@
+body {
+	background-color: #2b2b2b;
+	color: #ababab;
+	font-size: 16px;
+}
+
+#container {
+	position: relative;
+	width: 600px;
+	height: 200px;
+	overflow-y: auto;
+	/*overflow-x: hidden;*/
+	border: 5px solid #888;
+}
+table {
+	width: 100%;
+	box-sizing: border-box;
+	/*border: 10px solid #777;*/
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+td, th {
+	border: 5px solid #666;
+	box-sizing: border-box;
+	padding: .2em;
+}
+tbody {
+	/* 控制单元格内容的垂直对齐方式 */
+	vertical-align: top;
+}
+thead > tr {
+	/*position: fixed;*/
+	height: 30px;
+	background-color: #222;
+}
+th {
+	width: 50px;
+}
+th:nth-child(2) {
+	width: 100px;
+}
+th:nth-child(3) {
+	width: auto;
+}
+th:last-child {
+	width: 150px;
+}
