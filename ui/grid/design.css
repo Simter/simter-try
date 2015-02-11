@@ -1,0 +1,26 @@
+body {
+	background-color: #2b2b2b;
+	color: #ababab;
+	font-size: 16px;
+}
+
+#c1 {
+	width: 500px;
+	height: 200px;
+	border: 5px solid #888;
+}
+
+th, td {
+	border: 5px solid #666;
+}
+
+.table-head > table{
+	width: 600px;
+}
+
+.table-data > table{
+	width: 600px;
+}
+.table-head > table {
+	/*left: -20px;*/
+}

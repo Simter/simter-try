@@ -1,0 +1,65 @@
+.st-grid {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.st-grid > * {
+	position: relative;
+	width: 100%;
+	align-self: stretch;
+	flex: none;
+	overflow: hidden;
+}
+.st-grid > .table-data {
+	flex: auto;
+	overflow: auto;
+}
+
+.st-grid > .table-head > table,
+.st-grid > .table-data > table {
+	min-width: 100%;
+	box-sizing: border-box;
+	/*border: 10px solid #777;*/
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
+.st-grid > .table-head > table {
+	min-width: calc(100% - 17px);
+	position: relative;
+}
+
+.st-grid > .table-head > table > thead > tr > th,
+.st-grid > .table-data > table > tbody > tr > td {
+	/*border: 5px solid #666;*/
+	box-sizing: border-box;
+	padding: .2em;
+}
+.st-grid tbody {
+	/* 控制单元格内容的垂直对齐方式 */
+	vertical-align: top;
+}
+.st-grid tr {
+	/*position: fixed;*/
+	height: 30px;
+	background-color: #222;
+}
+/*
+.st-grid > table > thead > tr > th {
+	width: 50px;
+}
+.st-grid > table > thead > tr > th:nth-child(2) {
+	width: 100px;
+}
+.st-grid > table > thead > tr > th:nth-child(3) {
+	width: auto;
+}
+.st-grid > table > thead > tr > th:last-child {
+	width: 150px;
+}*/
