@@ -7,11 +7,11 @@ body {
 #c1 {
 	width: 500px;
 	height: 200px;
-	border: 5px solid #888;
+	border: 5px solid #aaa;
 }
 
 th, td {
-	border: 5px solid #666;
+	border-width: 5px;
 }
 
 .table-head > table{
