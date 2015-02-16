@@ -1,81 +1,70 @@
-.st-grid {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: flex-start;
-
-	box-sizing: border-box;
-	overflow: hidden;
+.st .grid {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+  overflow: hidden;
 }
-.st-grid > * {
-	position: relative;
-	width: 100%;
-	align-self: stretch;
-	flex: none;
-	overflow: hidden;
+.st .grid > * {
+  position: relative;
+  width: 100%;
+  align-self: stretch;
+  flex: none;
+  overflow: hidden;
 }
-.st-grid > .table-head {
-	border-width: 5px 0;
-	border-style: solid;
-	border-color: #666;
-	background-color: #222;
+.st .grid > .table-head {
+  border-width: 5px 0;
+  border-style: solid;
+  border-color: #666;
+  background-color: #222;
 }
-.st-grid > .table-data {
-	flex: auto;
-	overflow: auto;
+.st .grid > .table-data {
+  flex: auto;
+  overflow: auto;
 }
-
-.st-grid > .table-head > table,
-.st-grid > .table-data > table {
-	min-width: 100%;
-	box-sizing: border-box;
-	/*border: 10px solid #777;*/
-	border-spacing: 0px;
-	border-collapse: collapse;
+.st .grid > .table-head > table,
+.st .grid > .table-data > table {
+  min-width: 100%;
+  box-sizing: border-box;
+  border-spacing: 0px;
+  border-collapse: collapse;
 }
-
-.st-grid > .table-head > table {
-	min-width: calc(100% - 17px);
-	position: relative;
+.st .grid > .table-head > table {
+  min-width: calc(100% - 17px);
+  position: relative;
 }
-
-.st-grid > .table-head > table > thead > tr > th,
-.st-grid > .table-data > table > tbody > tr > td {
-	border: 5px solid #666;
-	padding: .2em;
-	box-sizing: border-box;
+.st .grid > .table-head > table > thead > tr > th,
+.st .grid > .table-data > table > tbody > tr > td {
+  border: 5px solid #666;
+  padding: 0.2em;
+  box-sizing: border-box;
 }
-.st-grid tbody {
-	/* 控制单元格内容的垂直对齐方式 */
-	vertical-align: top;
+.st .grid tbody {
+/* 控制单元格内容的垂直对齐方式 */
+  vertical-align: top;
 }
-
-.st-grid tr {
-	height: 30px;
+.st .grid tr {
+  height: 30px;
 }
-
-.st-grid > .table-head > table > thead > tr > th {
-	border-top-width: 0;
-	border-bottom-width: 0;
+.st .grid > .table-head > table > thead > tr > th {
+  border-top-width: 0;
+  border-bottom-width: 0;
 }
-
-.st-grid > .table-head > table > thead > tr > th:last-child {
-	border-right-color: transparent;
+.st .grid > .table-head > table > thead > tr > th:last-child {
+  border-right-color: transparent;
 }
-
-.st-grid > .table-data > table > tbody > tr:first-child > td {
-	border-top-width: 0;
+.st .grid > .table-data > table > tbody > tr:first-child > td {
+  border-top-width: 0;
 }
-
-.st-grid.no-hl > .table-head,
-.st-grid.no-hl > .table-data > table > tbody > tr > td {
-	border-top-width: 0;
-	border-bottom-width: 0;
+.st .grid.no-hl > .table-head,
+.st .grid.no-hl > .table-data > table > tbody > tr > td {
+  border-top-width: 0;
+  border-bottom-width: 0;
 }
-
-.st-grid.no-vl > .table-data > table > tbody > tr > td {
-	border-top-width: 0;
-	border-bottom-width: 0;
+.st .grid.no-vl > .table-data > table > tbody > tr > td {
+  border-top-width: 0;
+  border-bottom-width: 0;
 }

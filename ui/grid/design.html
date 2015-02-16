@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html class="st">
 <head>
 	<meta charset="utf-8">
 	<title>Fixed head table</title>
@@ -7,7 +7,26 @@
 	<link rel="stylesheet" type="text/css" href="design.css">
 </head>
 <body>
-<div id="c1" class="st-grid">
+<h2>Simple</h2>
+<div id="simple" class="grid">
+	<div class="table-head">
+		<table>
+			<col style="width: 50px"/>
+			<col style="width: 100px"/>
+			<col style="width: auto"/>
+			<thead>
+				<tr>
+					<th>序号</th>
+					<th>编号</th>
+					<th>标题 Auto Width</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
+</div>
+
+<h2>Fixed Head</h2>
+<div id="fixed-head" class="grid">
 	<div class="header">Header</div>
 	<div class="table-head">
 		<table>
