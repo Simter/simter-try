@@ -1,0 +1,71 @@
+.st
+  .grid
+    position relative
+    display flex
+    flex-direction column
+    flex-wrap nowrap
+    justify-content flex-start
+    align-items flex-start
+    box-sizing border-box
+    overflow hidden
+
+    > *
+      position relative
+      width 100%
+      align-self stretch
+      flex none
+      overflow hidden
+
+    > .table-head
+      border-width 5px 0
+      border-style solid
+      border-color #666
+      background-color #222
+
+    > .table-data
+      flex auto
+      overflow auto
+
+    > .table-head > table,
+    > .table-data > table
+      min-width 100%
+      box-sizing border-box
+      border-spacing 0px
+      border-collapse collapse
+
+
+    > .table-head > table
+      min-width calc(100% - 17px)
+      position relative
+
+    > .table-head > table > thead > tr > th,
+    > .table-data > table > tbody > tr > td
+      border 5px solid #666
+      padding .2em
+      box-sizing border-box
+
+    tbody
+      /* 控制单元格内容的垂直对齐方式 */
+      vertical-align top
+
+    tr
+      height 30px
+
+    > .table-head > table > thead > tr > th
+      border-top-width 0
+      border-bottom-width 0
+
+    > .table-head > table > thead > tr > th:last-child
+      border-right-color transparent
+
+    > .table-data > table > tbody > tr:first-child > td
+      border-top-width 0
+
+    &.no-hl > .table-head,
+    &.no-hl > .table-data > table > tbody > tr > td
+      border-top-width 0
+      border-bottom-width 0
+
+    &.no-vl > .table-data > table > tbody > tr > td
+      border-top-width 0
+      border-bottom-width 0

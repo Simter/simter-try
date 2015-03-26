@@ -1,4 +1,4 @@
-jQuery(".st-grid > .table-data").on("scroll", function(){
+jQuery(".st .grid > .table-data").on("scroll", function(){
 	//e.stopPropagation();
 	//e.preventDefault();
 	var $this = $(this);
